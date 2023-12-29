@@ -1,0 +1,31 @@
+body{
+    color: #ffff;
+}
+
+.bg-nav{
+    background-color: #000000d0;
+}
+
+.bg-nav a{
+    color: #ffff;
+}
+
+.bg-nav a:hover{
+    color: #93723e;
+}
+
+.active{
+    color: #93723e !important;
+}
+
+.icono{
+    color: #ffff;
+}
+
+.icono:hover{
+    color: #93723e;
+}
+
+.logo{
+    width: 200px;
+}
