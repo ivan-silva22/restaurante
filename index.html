@@ -31,7 +31,7 @@
           </div>
         </div>
       </div>
-      <nav class="navbar navbar-expand-lg bg-nav position-fixed">
+      <nav class="navbar navbar-expand-lg bg-nav position-fixed w-100">
         <div class="container-fluid py-2 mt-3">
           <a class="navbar-brand" href="#"
             ><img class="logo" src="./img/logo_large.png" alt=""
@@ -95,7 +95,7 @@
         data-bs-ride="carousel"
       >
         <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="2000">
+          <div class="carousel-item portada active" data-bs-interval="2000">
             <img
               class="img-fluid"
               src="./img/slaider/slaider-1.jpeg"
@@ -103,7 +103,7 @@
               alt="carousel"
             />
           </div>
-          <div class="carousel-item" data-bs-interval="2000">
+          <div class="carousel-item portada" data-bs-interval="2000">
             <img
               class="img-fluid"
               src="./img/slaider/slaider-2.jpeg"
@@ -111,7 +111,7 @@
               alt="carousel"
             />
           </div>
-          <div class="carousel-item" data-bs-interval="2000">
+          <div class="carousel-item portada" data-bs-interval="2000">
             <img
               class="img-fluid"
               src="./img/slaider/slaider-3.jpeg"
@@ -143,7 +143,7 @@
     <main>
       <section class="container text-center mt-5">
         <div class="row">
-          <div class="col">
+          <div class="col-md-6 col-sm-12">
             <h1 class="titulo">Acerca De</h1>
             <h5 class="texto-secundario">SOMOS EL RESTAURANTE TRADICIONAL Y DE MEJOR CALIDAD</h5>
             <hr class="linea" />
@@ -155,34 +155,27 @@
               mezcla con la innovación culinaria.
             </p>
           </div>
-          <div class="col">
+          <div class="col-md-6 col-sm-12">
             <div>
               <div>
-                <img class="img-acerca" src="./img/fideos.jpeg" alt="" />
+                <img class="img-acerca img-fluid" src="./img/fideos.jpeg" alt="" />
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="mt-5">
-        <article class="position-relative">
-          <div class="section-menu">
-            <img class="bg-menu" src="./img/seccion-bg-menu.jpg" alt="" />
-          </div>
-          <div class="section-text">
-            <h2>Nuestro menú</h2>
-            <div class="text-center">
-              <a href="#"
-                ><img class="img-menu" src="./img/icono-plato.png" alt="menu"
-              /></a>
-            </div>
-          </div>
-        </article>
+      <section class="seccion-bg-menu mt-5"> 
+        <div class="menu">
+          <h2>Nuestro menú</h2>
+          <a href="#"
+            ><img class="img-fluid"  src="./img/icono-plato.png" alt="menu"
+          /></a>
+        </div>
       </section>
-      <section class="menu-espacial">
+      <section class="menu-espacial mt-4">
         <h2>Especial de esta semana</h2>
         <div class="row container mt-5 mx-auto">
-          <div class="col">
+          <div class="col-md-6 col-sm-12">
             <div class="d-flex justify-content-evenly">
               <div class="img-menu-especial">
                 <img src="./img/menu-espacial/cerdo.jpg" alt="" />
@@ -337,32 +330,31 @@
         </div>
       </section>
       <section class="reservacion mt-5">
-        <img src="./img/seccion-bg-reservacion.jpg" alt="">
-          <div class="formulario">
-            <h2>Reserva tu mesa</h2>
-            <form class="mx-auto w-50">
-              <div class="mb-3">
-                <label for="nombre" class="form-label">Nombre*</label>
-                <input type="text" class="form-control" id="nombre" placeholder="Nombre" aria-label="nombre">
-              </div>
-              <div class="mb-3">
-                <label for="apellido" class="form-label">Apellido</label>
-                <input type="text" class="form-control" id="apellido" placeholder="apellido" aria-label="apellido">
-              </div>
-              <div class="mb-3">
-                <label for="telefono" class="form-label">Número de teléfono</label>
-                <input type="number" class="form-control" id="telefono" placeholder="Número de teléfono" aria-label="telefono">
-              </div>
-              <div class="mb-3">
-                <label for="fecha" class="form-label">Elige tu fecha</label>
-                <input type="date" class="form-control" id="fecha" aria-label="fecha">
-              </div>
-              <div class="mb-3">
-                <label for="hora" class="form-label">Elige tu hora</label>
-                <input type="datetime" class="form-control" id="fecha" aria-label="hora">
-              </div>
-            </form>
-          </div>
+        <h2>Reserva tu mesa</h2>
+        <div class="container">
+          <form class="mx-auto">
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre*</label>
+              <input type="text" class="form-control" id="nombre" placeholder="Nombre" aria-label="nombre">
+            </div>
+            <div class="mb-3">
+              <label for="apellido" class="form-label">Apellido</label>
+              <input type="text" class="form-control" id="apellido" placeholder="apellido" aria-label="apellido">
+            </div>
+            <div class="mb-3">
+              <label for="telefono" class="form-label">Número de teléfono</label>
+              <input type="number" class="form-control" id="telefono" placeholder="Número de teléfono" aria-label="telefono">
+            </div>
+            <div class="mb-3">
+              <label for="fecha" class="form-label">Elige tu fecha</label>
+              <input type="date" class="form-control" id="fecha" aria-label="fecha">
+            </div>
+            <div class="mb-3">
+              <label for="hora" class="form-label">Elige tu hora</label>
+              <input type="datetime" class="form-control" id="fecha" aria-label="hora">
+            </div>
+          </form>
+        </div>
       </section>
       <section class="testimonios mt-5">
         <h2 class="text-center">Nuestros clientes dicen</h2>

@@ -76,29 +76,33 @@ header{
     color: #93723e;
 }
 
-.section-menu{
-    position:absolute;
 
+.seccion-bg-menu{
+    background-image: url("../img/seccion-bg-menu.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    text-align: center;
 }
 
-.section-text{
-    position:absolute;
-    top: 10rem;
-    right: 28rem ;
+.menu h2{
     font-family: 'Sevillana', cursive;
-    color:#fff;
-    text-shadow: 1px 1px 2px  rgb(0, 0, 0);
+    font-size: 60px;
+    color: #93723e;
 }
 
-.section-text h2{
-    font-size: 70px;    
+.menu{
+    padding: 150px;
 }
 
-.img-menu{
+.menu img{
+   margin-top: 50px;
+}
+
+.menu img{
     transition: transform .3s;
 }
 
-.img-menu:hover{
+.menu img:hover{
     transform: scale(1.2);
     transition: transform .3s;
 }
@@ -134,25 +138,23 @@ header{
 }
 
 .reservacion{
-    position: relative;
+    background-image: url("../img/seccion-bg-reservacion.jpg");
+    background-repeat: no-repeat;
+    padding: 25px 0px;
 }
 
-.formulario h2{
-    position: absolute;
-    top: 10px;
-    left: 400px;
+.reservacion h2{
     color:#fff;
     font-family: 'Sevillana', cursive;
     text-shadow: 1px 1px 2px  rgb(0, 0, 0);
     font-size: 70px;
+    text-align: center;
 }
 
-.formulario form{
-    position: absolute;
-    top: 120px;
-    left: 300px;
+form{
     background-color: rgb(147, 114, 62, 0.6);
-    padding: 20px;
+    width: 75%;
+    padding: 10px;
     border-radius: 20px;
     font-family: 'Playfair Display', serif;
 }
@@ -196,4 +198,46 @@ footer{
 .copy p{
     margin: 1px 0;
     padding: 10px 0;
+}
+
+@media screen and (max-width: 767px){
+    .logo{
+        width: 150px;
+    }
+
+    .navbar{
+        width: 50%;
+    }
+
+    .formulario form{
+        top: 50px;
+        left: 90px;
+    }
+
+    .reservacion img{
+        height: 100vh;
+    }
+
+    .menu{
+        padding: 50px;
+    }
+
+    .form{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .portada{
+        height: 350px;
+    }
+
+    .portada img{
+        height: 100vh;
+    }
+
+    .carousel-testimonio{
+        height: 500px;
+        object-fit: contain;
+    }
 }
