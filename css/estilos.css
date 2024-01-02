@@ -78,7 +78,7 @@ header{
 
 .section-text{
     position:absolute;
-    top: 15rem;
+    top: 10rem;
     right: 28rem ;
     font-family: 'Sevillana', cursive;
     color:#fff;
@@ -96,4 +96,27 @@ header{
 .img-menu:hover{
     transform: scale(1.2);
     transition: transform .3s;
+}
+
+.menu-espacial{
+    margin-top: 540px;
+}
+
+.menu-espacial h2{
+    font-size: 70px;
+    color: #93723e;
+    font-family: 'Sevillana', cursive;
+    text-align: center;
+}
+
+.img-menu-especial img{
+    border-radius: 50%;
+}
+
+.titulo-menu{
+    color: #93723e;
+}
+
+.precio{
+    color: #93723e;
 }
