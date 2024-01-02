@@ -120,3 +120,47 @@ header{
 .precio{
     color: #93723e;
 }
+
+.reservacion img{
+    width: 100%;
+    height: 110vh;
+}
+
+.reservacion{
+    position: relative;
+}
+
+.formulario h2{
+    position: absolute;
+    top: 10px;
+    left: 400px;
+    color:#fff;
+    font-family: 'Sevillana', cursive;
+    text-shadow: 1px 1px 2px  rgb(0, 0, 0);
+    font-size: 70px;
+}
+
+.formulario form{
+    position: absolute;
+    top: 100px;
+    left: 300px;
+    background-color: rgb(147, 114, 62, 0.6);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.form-label{
+    color: #ffff;
+    font-weight: 600;
+}
+
+.testimonios h2{
+    color: #93723e;
+    font-family: 'Sevillana', cursive;
+    font-size: 70px;
+}
+
+.testimonios h4{
+    color: #93723e;
+    font-size: 30px;
+}
