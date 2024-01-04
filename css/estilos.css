@@ -307,6 +307,55 @@ footer{
     border: 1px solid #93723e;
 }
 
+.texto-menu{
+    font-family: 'Playfair Display', serif;
+}
+
+.linea-menu{
+    border: 2px solid #93723e;
+    width: 35%;
+}
+
+.menu-sandwich{
+    gap: 1.5em;
+}
+
+.card-img{
+    margin: 0 auto;
+}
+
+.navbar > .container{
+    justify-content: end !important;
+}
+
+.btn-color{
+    background-color: #93723e;
+    
+}
+
+.body-admin{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.administrador{
+    flex-grow: 1;
+    margin-top: 80px;
+}
+
+.btn-agregar{
+    background-color: #93723e;
+    color: #ffff;
+}
+
+.btn-agregar:hover{
+    background-color: #93723e;
+    color: #eae6e6d2;
+}
+
+
+
 @media screen and (max-width: 767px){
     .logo{
         width: 150px;
@@ -372,13 +421,23 @@ footer{
     .border-end{
         border: 0
     }
+
+    .card-menu{
+        margin: 10px 0;
+    }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     .cantidad-producto input{
         width: 100%;
     }
     .contenedor-pedidos-img{
         margin: auto 0;
+    }
+
+    .menu-sandwich{
+       gap: 1em;
+       margin: 0 auto;
+       width: 100%;
     }
 }
