@@ -260,6 +260,52 @@ footer{
     margin: auto;
 }
 
+.bg-pedidos{
+    text-align: center;
+    width: 70%;
+    height: 200px;
+    padding: 10px;
+    margin: 30px 0;
+}
+
+.img-pedidos{
+    width: 200px;
+}
+
+.btn-pedidos{
+    background-color: #93723e;
+    margin: 5px 0;
+    color: #ffff;
+    width: 50px;
+}
+
+.btn-pedidos:hover{
+    background-color: #93723e;
+    color: #eae6e6d2;
+}
+
+.btn-pedido{
+    background-color: #93723e;
+    color: #ffff;
+}
+
+.btn-pedido:hover{
+    background-color: #93723e;
+    color: #eae6e6d2;
+}
+
+.texto-pedidos{
+    font-family: 'Playfair Display', serif;
+
+}
+
+.cantidad-producto input{
+    width: 50%;
+}
+
+.border-end{
+    border: 1px solid #93723e;
+}
 
 @media screen and (max-width: 767px){
     .logo{
@@ -306,5 +352,33 @@ footer{
         flex-direction: column;
         text-align: center;
         padding: 0;
+    }
+
+    .bg-pedidos{
+        margin: 0 auto;
+        width: auto;
+    }
+    .contenedor-pedidos{
+        flex-direction: column;
+    }
+
+    .detalle-pedidos{
+        margin-top: 250px;
+        text-align: center;
+        border-top: 1px solid #93723e;
+        padding: 15px;
+    }
+
+    .border-end{
+        border: 0
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .cantidad-producto input{
+        width: 100%;
+    }
+    .contenedor-pedidos-img{
+        margin: auto 0;
     }
 }
