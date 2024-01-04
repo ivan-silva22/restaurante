@@ -398,6 +398,12 @@ footer{
     color: #93723e;
 }
 
+.img-error404{
+    width: 50%;
+    margin: 0 auto;
+}
+
+
 @media screen and (max-width: 767px){
     .logo{
         width: 150px;
@@ -467,6 +473,12 @@ footer{
     .card-menu{
         margin: 10px 0;
     }
+
+    .img-error404{
+        width: 100%;
+        margin: 0px auto;
+    }
+    
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
