@@ -374,7 +374,7 @@ footer{
     background-color: #ffff !important;
 }
 
-.input-iniciar-sesion{
+.input-modal{
     font-weight: 700;
 
 }
@@ -388,6 +388,15 @@ footer{
     color: #eae6e6d2;
 }
 
+.btn-registrarse{
+    color: #ffff;
+    border: 0;
+    margin-top: 2px;
+}
+
+.btn-registrarse:hover{
+    color: #93723e;
+}
 
 @media screen and (max-width: 767px){
     .logo{
