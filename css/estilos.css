@@ -151,7 +151,7 @@ header{
     text-align: center;
 }
 
-form{
+.form-reservar{
     background-color: rgb(147, 114, 62, 0.6);
     width: 75%;
     padding: 10px;
@@ -354,6 +354,39 @@ footer{
     color: #eae6e6d2;
 }
 
+.btn-iniciar-sesion{
+    color: #ffff;
+    border: 0;
+    margin-top: 2px;
+}
+
+.btn-iniciar-sesion:hover{
+    color: #93723e;
+}
+
+.modal-content{
+    color: #ffff;
+    background-color: rgb(0, 0, 0, 0.6);
+    font-family: 'Playfair Display', serif;;
+}
+
+.btn-close{
+    background-color: #ffff !important;
+}
+
+.input-iniciar-sesion{
+    font-weight: 700;
+
+}
+
+.btn-iniciar{
+    background-color: #93723e !important;
+    color: #ffff;
+}
+
+.btn-iniciar:hover{
+    color: #eae6e6d2;
+}
 
 
 @media screen and (max-width: 767px){
