@@ -6,7 +6,7 @@ export default class Producto{
     #precio;
     #estado;
     constructor(nombre, categoria, imagen, precio, estado){
-        this.#codigo = 0;
+        this.#codigo = uuidv4();
         this.#nombre = nombre;
         this.#categoria = categoria;
         this.#imagen = imagen;
