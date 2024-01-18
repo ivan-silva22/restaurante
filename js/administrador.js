@@ -1,12 +1,8 @@
-import Usuario from "./classUsuario.js";
+let formularioProducto = document.getElementById('form-producto');
 
-const nuevoUsuario = new Usuario(
-    1234,
-    "Ivan Silva",
-    "silvaivan280@gmail.com",
-    123456789,
-    "activo",
-    "administrador"
-)
+formularioProducto.addEventListener('submit', prepararFormulario);
 
-console.log(nuevoUsuario)
+function prepararFormulario(e){
+    e.preventDefault();
+    console.log('hola mundo')
+}
