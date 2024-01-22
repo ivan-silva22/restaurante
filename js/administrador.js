@@ -1,12 +1,17 @@
 import Producto from "./classProducto.js";
 
 let formularioProducto = document.getElementById('form-producto');
+let listaProductos = [];
 
 formularioProducto.addEventListener('submit', prepararFormulario);
 
 function prepararFormulario(e){
     e.preventDefault();
     console.log('hola mundo')
+    crearProducto();
+}
+
+function crearProducto(){
     const nuevoProducto = new Producto(
         'Pizza',
         'Plato principal',
@@ -14,5 +19,8 @@ function prepararFormulario(e){
         4500,
         'Activo'
     )
-    console.log(nuevoProducto)
+    console.log(nuevoProducto);
+    listaProductos.push(nuevoProducto);
+    console.log(listaProductos)
+    localStorage.setItem('listaProductos', JSON.stringify(listaProductos))
 }

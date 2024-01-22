@@ -54,4 +54,15 @@ export default class Producto{
     set estado(nuevoEstado){
         this.#estado = nuevoEstado;
     }
+
+    toJSON(){
+        return{
+            codigo: this.codigo,
+            nombre: this.nombre,
+            categoria: this.categoria,
+            imagen: this.imagen,
+            precio: this.precio,
+            estado: this.estado
+        }
+    }
 }
