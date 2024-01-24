@@ -5,8 +5,8 @@ export default class Usuario{
     #password;
     #estado;
     #perfil;
-    constructor(id, nombre, email, password, estado, perfil){
-        this.#id = id;
+    constructor(nombre, email, password, estado, perfil){
+        this.#id = uuidv4();
         this.#nombre = nombre;
         this.#email = email;
         this.#password = password;
@@ -53,5 +53,16 @@ export default class Usuario{
     }
     set perfil(nuevoPerfil){
         this.#perfil = nuevoPerfil;
+    }
+
+    toJSON(){
+        return{
+            id: this.id,
+            nombre: this.nombre,
+            email: this.email,
+            password: this.password,
+            estado: this.estado,
+            perfil: this.perfil
+        }
     }
 }

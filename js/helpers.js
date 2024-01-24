@@ -1,4 +1,4 @@
-function validarCantidadCaracteres(texto, min, max){
+export function validarCantidadCaracteres(texto, min, max){
     if(texto.length >= min && texto.length <= max){
         console.log('dato correcto');
         return true;
