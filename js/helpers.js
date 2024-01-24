@@ -9,7 +9,7 @@ export function validarCantidadCaracteres(texto, min, max){
 }
 
 function validarPrecio(precio){
-    let patron = new RegExp("[1-9]{1-5}")
+    let patron = /^[1-9]\d{0,4}$/
     if(patron.test(precio)){
         return true;
     }else{
@@ -31,6 +31,8 @@ function validarImagen(imagen){
 
 
 
+
+
 export function resumenValidacion(nombre, categoria, precio, imagen, estado){
     let resumen = '';
     if(!validarCantidadCaracteres(nombre, 3, 100)){
@@ -40,7 +42,7 @@ export function resumenValidacion(nombre, categoria, precio, imagen, estado){
         resumen += 'La categoria debe tener entre 3 y 100 caracteres <br>';
     }
     if(!validarPrecio(precio)){
-        resumen += 'El precio debe tener un rango de 1 y 10000<br>';
+        resumen += 'El precio debe tener un rango de 1 y 10000 <br>';
     }
     if(!validarImagen(imagen)){
         resumen += 'El formato de imagen debe ser (.jpg / .jpeg / .webp)'

@@ -90,8 +90,7 @@
       <section class="table-responsive">
         <button
           class="btn btn-agregar my-2"
-          data-bs-toggle="modal"
-          data-bs-target="#form"
+          id="btnCrearProducto"
         >
           <i class="bi bi-plus-square"></i> Nuevo
         </button>
@@ -171,7 +170,7 @@
     <!-- Modal formulario -->
     <div
       class="modal fade"
-      id="form"
+      id="modal"
       tabindex="-1"
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
@@ -246,7 +245,7 @@
                   class="form-control"
                   id="precio"
                   placeholder="Precio"
-                  min="0"
+                  
                   minlength="1"
                   maxlength="10000"
                   required
