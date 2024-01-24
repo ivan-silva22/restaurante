@@ -19,7 +19,7 @@ function prepararFormulario(e){
 }
 
 function crearProducto(){
-    let resumen = resumenValidacion(nombre.value, categoria.value, precio.value, estado.value);
+    let resumen = resumenValidacion(nombre.value, categoria.value, precio.value, imagen.value, estado.value);
     if(resumen.length === 0){
         const nuevoProducto = new Producto(
             nombre.value,
