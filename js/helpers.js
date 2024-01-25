@@ -8,6 +8,14 @@ export function validarCantidadCaracteres(texto, min, max){
     }
 }
 
+function validarCategoria(opcion){
+    if(opcion != ''){
+        return true;
+    }else{
+        return false;
+    }
+}
+
 function validarPrecio(precio){
     let patron = /^[1-9]\d{0,4}$/
     if(patron.test(precio)){
@@ -28,8 +36,13 @@ function validarImagen(imagen){
     }
 }
 
-
-
+function validarEstado(opcion){
+    if(opcion != ''){
+        return true;
+    }else{
+        return false;
+    }
+}
 
 
 
@@ -38,8 +51,8 @@ export function resumenValidacion(nombre, categoria, precio, imagen, estado){
     if(!validarCantidadCaracteres(nombre, 3, 100)){
         resumen+= 'El nombre del producto debe tener entre 3 y 100 caracteres <br>';
     }
-    if(!validarCantidadCaracteres(categoria, 3, 100)){
-        resumen += 'La categoria debe tener entre 3 y 100 caracteres <br>';
+    if(!validarCategoria(categoria)){
+        resumen += 'Debe seleccionar una categoria <br>';
     }
     if(!validarPrecio(precio)){
         resumen += 'El precio debe tener un rango de 1 y 10000 <br>';
@@ -47,8 +60,8 @@ export function resumenValidacion(nombre, categoria, precio, imagen, estado){
     if(!validarImagen(imagen)){
         resumen += 'El formato de imagen debe ser (.jpg / .jpeg / .webp)'
     }
-    if(!validarCantidadCaracteres(estado, 3, 100)){
-        resumen += 'El estado debe tener entre 3 y 100 caracteres';
+    if(!validarEstado(estado)){
+        resumen += 'Debe seleccionar un estado (Activo o Inactivo';
     }
     return resumen;
 }

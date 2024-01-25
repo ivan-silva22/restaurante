@@ -34,21 +34,21 @@ cargarInicial();
 
 function cargarInicial() {
   if (listaProductos.length > 0) {
-    listaProductos.map((producto) => crearFila(producto));
+    listaProductos.map((producto, index) => crearFila(producto, index));
   }
 }
 
-function crearFila(producto) {
+function crearFila(producto, index) {
   let tbody = document.getElementById("tablaProdutos");
   console.log(tbody)
   tbody.innerHTML += `<tr>
-  <th scope="row">1</th>
+  <th scope="row">${index + 1}</th>
   <td>${producto.nombre}</td>
   <td>${producto.categoria}</td>
   <td class="text-truncate tamanio-celda">
     ${producto.imagen}
   </td>
-  <td>${producto.precio} </td>
+  <td>$${producto.precio} </td>
   <td>${producto.estado} </td>
   <td>
     <button class="btn btn-danger">

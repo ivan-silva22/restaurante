@@ -88,10 +88,7 @@
       <h2><i class="bi bi-dropbox"></i> Productos</h2>
       <hr />
       <section class="table-responsive">
-        <button
-          class="btn btn-agregar my-2"
-          id="btnCrearProducto"
-        >
+        <button class="btn btn-agregar my-2" id="btnCrearProducto">
           <i class="bi bi-plus-square"></i> Nuevo
         </button>
         <table class="table table-striped">
@@ -108,9 +105,7 @@
               <th scope="col">Opciones</th>
             </tr>
           </thead>
-          <tbody id="tablaProdutos">
-            
-          </tbody>
+          <tbody id="tablaProdutos"></tbody>
         </table>
       </section>
     </main>
@@ -199,15 +194,17 @@
               </div>
               <div class="mb-3">
                 <label for="categoria" class="form-label">Categoria*</label>
-                <input
-                  type="text"
-                  class="form-control"
+                <select
+                  class="form-select"
                   id="categoria"
-                  placeholder="Categoria"
-                  minlength="3"
-                  maxlength="100"
-                  required
-                />
+                  aria-label="Default select example"
+                >
+                  <option selected value="">Selecciona una opción</option>
+                  <option value="Sandwiches">Sándwiches</option>
+                  <option value="Pastas">Pastas</option>
+                  <option value="Bebidas">Bebidas</option>
+                  <option value="Postres">Postres</option>
+                </select>
               </div>
               <div class="mb-3">
                 <label for="imagen" class="form-label">imagen*</label>
@@ -228,7 +225,6 @@
                   class="form-control"
                   id="precio"
                   placeholder="Precio"
-                  
                   minlength="1"
                   maxlength="10000"
                   required
@@ -236,23 +232,26 @@
               </div>
               <div class="mb-3">
                 <label for="estado" class="form-label">Estado*</label>
-                <input
-                  type="text"
-                  class="form-control"
+                <select
+                  class="form-select"
                   id="estado"
-                  placeholder="Estado"
-                  minlength="3"
-                  maxlength="100"
-                  required
-                />
+                  aria-label="Default select example"
+                >
+                  <option selected value="">Selecciona una opción</option>
+                  <option value="Activo">Activo</option>
+                  <option value="Inactivo">Inactivo</option>
+                </select>
               </div>
-              <div class="alert alert-danger mt-3 d-none" role="alert" id="alerta"></div>
+              <div
+                class="alert alert-danger mt-3 d-none"
+                role="alert"
+                id="alerta"
+              ></div>
               <div class="mb-3">
                 <button type="submit" class="btn btn-iniciar">Enviar</button>
               </div>
             </form>
           </div>
-          
         </div>
       </div>
     </div>

@@ -1,7 +1,6 @@
 import Producto from "./classProducto.js";
 
 let listaProductos = JSON.parse(localStorage.getItem("listaProductos")) || [];
-console.log(listaProductos);
 
 if (listaProductos.length > 0) {
   listaProductos = listaProductos.map(
@@ -16,9 +15,7 @@ if (listaProductos.length > 0) {
   );
 }
 
-console.log(listaProductos);
-
-cargarInicial();
+cargarInicial()
 
 function cargarInicial() {
   if (listaProductos.length > 0) {
@@ -32,12 +29,11 @@ function cargarInicial() {
 }
 
 function crearCard(producto) {
-  console.log(producto.categoria);
-  if (producto.categoria === "Bebidas" && producto.estado === "Activo") {
+  if (producto.categoria === "Sandwiches" && producto.estado === "Activo") {
     let row = document.getElementById("row");
-    row.innerHTML += `<div class="col-md-4 col-sm-12 card-menu">
+    row.innerHTML = `<div class="col-md-4 col-sm-12 card-menu">
         <div class="card-img">
-            <img class="img-fluid" src=${producto.imagen} alt="">
+            <img class="img-fluid" src=${producto.imagen} alt=${producto.nombre}>
         </div>
         <div class="card-bg ">
             <h5>${producto.nombre} </h5>
@@ -45,7 +41,7 @@ function crearCard(producto) {
             <button class="btn">Agregar a pedidos</button>
         </div>
       </div>`;
-  } else {
+  }else {
     let row = document.getElementById("row");
     row.innerHTML = `<div class='col col-sm-12'>
         <h1 class="texto-menu text-center">Noy hay productos</h1>
