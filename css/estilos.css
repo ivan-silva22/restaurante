@@ -403,6 +403,9 @@ footer{
     margin: 0 auto;
 }
 
+.tamanio-celda{
+    max-width: 150px;
+}
 
 @media screen and (max-width: 767px){
     .logo{
