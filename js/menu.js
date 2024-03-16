@@ -22,7 +22,11 @@ cargarInicial();
 
 function cargarInicial() {
   if (listaProductos.length > 0) {
-    listaProductos.map((producto) => crearCard(producto));
+    listaProductos.map((producto) => {
+      if(producto.estado === 'Activo'){
+        crearCard(producto);
+      }
+    });
   } else {
     let row = document.getElementById("row");
     row.innerHTML = `<div class='col col-sm-12'>
@@ -33,8 +37,8 @@ function cargarInicial() {
 
 function crearCard(producto) {
   let row = document.getElementById("row");
-  console.log(row);
-  row.innerHTML += `<div class="col col-sm-12 card-menu">
+    console.log(row);
+    row.innerHTML += `<div class="col col-sm-12 card-menu">
     <div class="card-img">
         <img class="img-fluid" src=${producto.imagen} alt="">
     </div>

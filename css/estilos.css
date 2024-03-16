@@ -220,6 +220,9 @@ footer{
     width: 100%;
 }
 
+.card-img img{
+    border-radius: 10px 10px 0 0 ;
+}
 
 .card-bg{
     position: absolute;
